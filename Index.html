@@ -4,52 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comfama</title>
+    
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">   
 </head>
 
 
 <body>
-    <header>
+    <header id="arriba">
         <h1><img src="Img/img 1.jpeg" alt="Logo Comfama" width="800"></h1>
     </header>
 
-    <nav>
-
-
-
-        
+    <nav class="opciones">
+        <ul class="menu">
+            <li><a href="#Educacion1">Educacion</a></li>
+            <li><a href="#Recreacion1">Recreacion</a></li>
+            <li><a href="#Salud1">Salud</a></li>
+        </ul>
     </nav>
+
 
     <main>
 
-        <section>
+        <section id="Educacion1" class="education">
+            <article>
             <h2><strong>Educacion</strong></section></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus neque minima saepe modi dolor. Quos optio similique saepe sequi nisi impedit? Est quos nostrum odit, recusandae doloribus quidem cumque? Sapiente.
         Blanditiis atque quam explicabo cupiditate, dolorem est doloribus tempore laborum nam, officiis, vero ducimus numquam magni aspernatur totam sapiente corrupti beatae expedita et esse ipsa. Dolorem pariatur nihil porro amet!
         Eligendi ut repudiandae consectetur eveniet, ab commodi recusandae modi architecto praesentium id quia porro provident necessitatibus, minus totam adipisci illum, reiciendis quaerat placeat at voluptatibus labore enim? Quia, harum aliquam.
         Modi quas magni dolor similique distinctio dicta pariatur officia, itaque, a praesentium deleniti quaerat sunt velit minima iusto totam non. Esse rerum saepe nobis voluptate aut itaque velit voluptatem ea?
         Reiciendis, nobis esse! Quia voluptates est ducimus officia ad explicabo, nemo deserunt voluptatem rem reiciendis accusantium magni molstias dolorem qui ea omnis, at voluptatum! Similique eius doloremque sunt facilis asperiores.</p>
+        </article>
+        <a href="#arriba"><button>Volver arriba</button></a>
         <hr>
-        <section>
+        </section>
+
+        <section id="Recreacion1" class="recreation">
+            <article>
             <h2><strong>Recreacion</strong></section></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum corrupti velit, incidunt illo architecto quisquam eum a aut, nisi illum laborum beatae veritatis reiciendis mollitia ut doloremque sequi esse dolorem.
         Deserunt neque, deleniti pariatur repellat dolorem voluptas veniam quae, sed sunt esse delectus magnam, saepe enim aliquid aperiam. Nisi expedita, et molestiae incidunt a iusto? Voluptate, asperiores fuga. Ipsa, voluptas.
         Quasi porro error beatae nesciunt nostrum consectetur quod aspernatur, possimus expedita sunt quas est, assumenda laboriosam qui excepturi esse eaque nemo vitae rerum ipsa laborum tenetur. Perspiciatis voluptatibus eius sequi.
         Iusto debitis adipisci voluptatem nemo esse recusandae! Obcaecati necessitatibus saepe, esse officiis non ut libero maiores dolorum tenetur consectetur? Pariatur doloremque commodi consequatur veritatis nisi temporibus, provident quasi voluptatum sunt?
         Veritatis, ea excepturi dolorum harum necessitatibus quaerat accusantium voluptatibus molestias ut cum qui inventore consectetur eligendi provident velit neque quas tenetur saepe modi iure dicta consequuntur rerum est. Ratione, libero!</p>
+    
+        </article>
+        <a href="#arriba"><button>Volver arriba</button></a>
         <hr>
-        <section>
+        </section>
+
+        <section id="Salud1" class="salud">
+            <article>
             <h2><strong>Salud</strong></section></h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam vitae consectetur architecto officia, illo nemo enim ratione quas fuga! Totam nemo distinctio fuga. Corporis aspernatur possimus, iusto nam facilis ex?
         Iusto cum temporibus sit, voluptatum quam porro facilis voluptas natus blanditiis ipsa aperiam nobis ab molestiae veritatis explicabo, delectus quo ea aspernatur ex et quibusdam reprehenderit id odio nisi? Quia.
         Quae suscipit est animi hic voluptate, impedit ut repellat corrupti fugit autem perferendis eum. Cumque, maiores. Repellat, odit maiores. Nisi quae amet esse quisquam explicabo laboriosam, molestiae beatae mollitia earum.
         Perspiciatis quasi ratione sed vitae neque excepturi unde obcaecati quae voluptatibus ex consectetur facere, facilis accusantium impedit ducimus? Provident ad deleniti amet, porro ipsum laborum eveniet quos. Laborum, illum reiciendis.
-        Illum veniam modi repellat vero quod labore consectetur vel, nostrum, blanditiis, iure quisquam rerum ipsam a aperiam quidem! Omnis ex fugiat beatae quo doloremque magni autem suscipit deleniti corporis nam!</p>
+        Illum veniam modi repellat vero quod labore consectetur vel, nostrum, bland itiis, iure quisquam rerum ipsam a aperiam quidem! Omnis ex fugiat beatae quo doloremque magni autem suscipit deleniti corporis nam!</p>
+        </article>
+        <a href="#arriba"><button>Volver arriba</button></a>
+        <hr>
+        </section>
+
+<!-- creacion de un login -->
+        <section class="login">
+            <h2>Contactanos</h2>
+            <p>Si deseas contactarnos, por favor completa el siguiente formulario:</p>
+            <form action="/enviar" method="post">
+                <div class="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Digite por favor su nombre" required>
+                </div>
+
+                <div class="formulario">
+                    <laber for="correo">Correo electronico</laber>
+                    <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electronico" required>
+                </div>
+
+                <div class="formulario">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+                </div>
+
+                <div class="formulario">
+                    <label for="direccion">Direccion:</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccion">
+                </div>
+
+                <div class="formulario">
+                    <label for="mensaje">mensaje:</label>
+                    <textarea id="mensaje" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+            
+        </section>
 
 
-
-
-
-
+        <footer>
+            <p>Derechos reservados &copy; 2024 Comfama</p>
+        </footer>
 
 
     </main>
