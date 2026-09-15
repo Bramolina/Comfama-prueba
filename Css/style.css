@@ -20,7 +20,6 @@ header {
 }
 
 .education {
-    background-color: #4e4a4a;
     margin-bottom: 20px;
     padding-top: 1px;
 
@@ -28,31 +27,29 @@ header {
 }
 
 .education h2 {
-    color: #ffffff;
+    color: #161616;
     text-align: center;
     margin-bottom: 30px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 .recreation {
-    background-color: #4e4a4a;
     padding-top: 1px;
     margin-bottom: 20px;
 }
 
 .recreation h2 {
-    color: #ffffff;
+    color: #040404;
     text-align: center;
     margin-bottom: 30px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 .salud {
-    background-color: #4e4a4a;
     padding-top: 1px;
     margin-bottom: 20px;
 }
 
 .salud h2 {
-    color: #ffffff;
+    color: #0a0a0a;
     text-align: center;
     margin-bottom: 30px;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -113,7 +110,7 @@ img {
 }
 img:hover {
     filter: grayscale(0%);
-    transform: translateY(-10px) scale(1.05) rotate(5deg);
+    transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 20px #999;
 
 }
@@ -121,7 +118,41 @@ img:hover {
 .education h2:hover,
 .recreation h2:hover,
 .salud h2:hover {
-    color:#f2c6c6;
+    color:#7a7676;
     transform: scale(1.25);
     
 }
+
+.education p,
+.recreation p,
+.salud p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px #888;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+    filter: grayscale(100%);
+}
+
+.education h2:hover,
+.recreation h2:hover,
+.salud h2:hover {
+    
+    filter: grayscale(0%);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px #838181;
+    
+}
+
+.education p:hover,
+.recreation p:hover,
+.salud p:hover {
+    
+    filter: grayscale(0%);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px #1b1b1b;
+
