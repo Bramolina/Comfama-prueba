@@ -22,11 +22,13 @@
             <li><a href="#Educacion1">Educacion</a></li>
             <li><a href="#Recreacion1">Recreacion</a></li>
             <li><a href="#Salud1">Salud</a></li>
+            <li><a href="#Contactanos1">Contactanos</a></li>
         </ul>
     </nav>
 
 
     <main>
+        <div class="container">
 
         <section id="Educacion1" class="education">
             <article>
@@ -37,8 +39,8 @@
         Modi quas magni dolor similique distinctio dicta pariatur officia, itaque, a praesentium deleniti quaerat sunt velit minima iusto totam non. Esse rerum saepe nobis voluptate aut itaque velit voluptatem ea?
         Reiciendis, nobis esse! Quia voluptates est ducimus officia ad explicabo, nemo deserunt voluptatem rem reiciendis accusantium magni molstias dolorem qui ea omnis, at voluptatum! Similique eius doloremque sunt facilis asperiores.</p>
         </article>
+
         <a href="#arriba"><button>Volver arriba</button></a>
-        <hr>
         </section>
 
         <section id="Recreacion1" class="recreation">
@@ -52,7 +54,8 @@
     
         </article>
         <a href="#arriba"><button>Volver arriba</button></a>
-        <hr>
+
+        
         </section>
 
         <section id="Salud1" class="salud">
@@ -65,11 +68,12 @@
         Illum veniam modi repellat vero quod labore consectetur vel, nostrum, bland itiis, iure quisquam rerum ipsam a aperiam quidem! Omnis ex fugiat beatae quo doloremque magni autem suscipit deleniti corporis nam!</p>
         </article>
         <a href="#arriba"><button>Volver arriba</button></a>
-        <hr>
+        
+        </div>
         </section>
 
 <!-- creacion de un login -->
-        <section class="login">
+        <section id="Contactanos1"class="login">
             <h2>Contactanos</h2>
             <p>Si deseas contactarnos, por favor completa el siguiente formulario:</p>
             <form action="/enviar" method="post">
@@ -79,7 +83,7 @@
                 </div>
 
                 <div class="formulario">
-                    <laber for="correo">Correo electronico</laber>
+                    <label for="correo">Correo electronico</laber>
                     <input type="email" id="correo" name="correo" placeholder="Ingrese su correo electronico" required>
                 </div>
 
@@ -97,9 +101,13 @@
                     <label for="mensaje">mensaje:</label>
                     <textarea id="mensaje" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
                 </div>
+
                 <button type="submit">Enviar</button>
                 <button type="reset">Limpiar</button>
+
+                
             </form>
+            <a href="#arriba"><button>Volver arriba</button></a>
 
         </section>
 

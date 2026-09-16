@@ -14,7 +14,7 @@ body {
 
 
 header {
-    background-color: #f2f2f2;
+    background-color: #544444;
     padding: 20px;
     text-align: center;
 }
@@ -118,8 +118,11 @@ img:hover {
 .education h2:hover,
 .recreation h2:hover,
 .salud h2:hover {
-    color:#7a7676;
-    transform: scale(1.25);
+    background-color: #ae404025;
+    color:black;
+    filter: grayscale(0%);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px #838181;
     
 }
 
@@ -133,19 +136,8 @@ img:hover {
     transition: color 0.3s ease, transform 0.3s ease;
     border-radius: 35px;
     box-shadow: 5px 5px 15px #888;
-    transition: transform 0.3s ease;
     opacity: 0.8;
     filter: grayscale(100%);
-}
-
-.education h2:hover,
-.recreation h2:hover,
-.salud h2:hover {
-    
-    filter: grayscale(0%);
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 10px 20px #838181;
-    
 }
 
 .education p:hover,
@@ -155,4 +147,89 @@ img:hover {
     filter: grayscale(0%);
     transform: translateY(-10px) scale(1.05);
     box-shadow: 0 10px 20px #1b1b1b;
+}
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.login {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.login h2 {
+    color: #0a0a0a;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+
+.login p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px #888;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+    filter: grayscale(100%);
+
+}
+
+section .formulario label{
+    
+    margin-bottom: 5px;
+    font-weight: bold;
+    
+    }
+
+section .formulario input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-sizing: border-box;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 5px 5px 15px #888;
+    outline: none;
+}
+
+section .formulario textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+button {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.login p:hover {
+    filter: grayscale(0%);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px #1b1b1b;
+}
+
+.login h2:hover {
+    background-color: #ae404025;
+    color:black;
+    filter: grayscale(0%);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px #1b1b1b;
+}
+/* efecto de zoom y elevacion al pasar el mouse*/
+
+.login input:hover,
+.login textarea:hover,
+.login input:focus,
+.login textarea:focus {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 10px 20px #1b1b1b;
+}
